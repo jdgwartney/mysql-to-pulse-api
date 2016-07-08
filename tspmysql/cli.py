@@ -15,14 +15,23 @@
 # limitations under the License.
 #
 
+import argparse
+from etl import ETL
 
 class Cli(object):
 
     def __init__(self):
         pass
 
+    def get_arguments(self):
+
+        parser = argparse.parser(description="get args")
+
     def run(self):
         print("running")
+
+        etl = ETL()
+        etl.run()
 
 
 def main():
