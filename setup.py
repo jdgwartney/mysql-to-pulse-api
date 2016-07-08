@@ -21,5 +21,6 @@ setup(
     install_requires=[
        'tspapi >= 0.3.5',
        'petl >= 1.1.0',
+       'PyMySQL>=0.7.5',
     ],
 )
