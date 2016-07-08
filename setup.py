@@ -13,15 +13,13 @@ setup(
     license='LICENSE',
     entry_points={
         'console_scripts': [
-            'tsp-mysql = tspmysql.cli:main',
+            'tsp-mysql = tspmysql.etl:main',
          ],
     },
     description='TrueSight Pulse MySQL ETL',
     long_description=open('README.txt').read(),
     install_requires=[
-       'python-dateutil >= 2.5.2',
        'tspapi >= 0.3.5',
-       'pyowm >= 2.3.0',
        'petl >= 1.1.0',
     ],
 )
